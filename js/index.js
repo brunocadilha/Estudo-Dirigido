@@ -44,7 +44,7 @@ $window.on('scroll', sticky);
 
 //Navigational Menu
 $('nav a').click(function(a){
-  var menuPlace = $(this).index();
+  var menuPlace = $(this).href();
   a.preventDefault();
   $('html, body').animate({
     scrollTop : $('section').eq(menuPlace).offset().top - $('nav').height()
