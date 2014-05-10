@@ -17,3 +17,24 @@ body {
   font-family: helvetica, arial, sans-serif;
 }
 
+
+section {
+  height: 100%;
+  min-height: 250px;
+}
+
+.bodysec {
+  min-height: 700px;
+}
+ 
+#homesec {
+  background:
+ url(http://farm8.staticflickr.com/7129/6962272018_69a32924f9_h.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-bottom: 80px;
+}
+ 
+#nav_wrap {
+  background: white;
