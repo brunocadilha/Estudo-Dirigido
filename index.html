@@ -140,41 +140,49 @@
 				<!-- Imagens de detalhe de banheiro -->
 
 			</div>
-      <div class="col-md-4 text-center">
-        <img class="img-circle" src="image/image/cozinha.jpg">
-        <h2>Cozinha</h2>
-        <p><a class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-lg-2">View details »</a></p>
+			<div class="col-md-4 text-center">
+				<img class="img-circle" src="image/image/cozinha.jpg">
+				<h2>Cozinha</h2>
+				<p><a class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-lg-2">View details »</a></p>
 
-        <!-- Imagens de detalhe de cozinha -->
-        <div class="modal fade bs-example-modal-lg-2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <h1>
-                <img class="img-polaroid" src="image/cozinha/cozinha-1.jpg">
-                <img class="img-polaroid" src="image/cozinha/cozinha-2.jpg">
-              </h1>
-              <h1>
-                <img class="img-polaroid" src="image/cozinha/cozinha-3.jpg">
-                <img class="img-polaroid" src="image/cozinha/cozinha-4.jpg">
-              </h1>
-              <h1>
-                <img class="img-polaroid" src="image/cozinha/cozinha-5.jpg">
-                <img class="img-polaroid" src="image/cozinha/cozinha-6.jpg">
-              </h1>
-            </div>
-          </div>
-        </div>
-        <!-- Imagens de detalhe de cozinha -->
+				<!-- Imagens de detalhe de cozinha -->
+				<div class="modal fade bs-example-modal-lg-2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<h1>
+								<img class="img-polaroid" src="image/cozinha/cozinha-1.jpg">
+								<img class="img-polaroid" src="image/cozinha/cozinha-2.jpg">
+							</h1>
+							<h1>
+								<img class="img-polaroid" src="image/cozinha/cozinha-3.jpg">
+								<img class="img-polaroid" src="image/cozinha/cozinha-4.jpg">
+							</h1>
+							<h1>
+								<img class="img-polaroid" src="image/cozinha/cozinha-5.jpg">
+								<img class="img-polaroid" src="image/cozinha/cozinha-6.jpg">
+							</h1>
+						</div>
+					</div>
+				</div>
+				<!-- Imagens de detalhe de cozinha -->
 
-      </div>
-    </div>
-  </blockquote>
+			</div>
+		</div>
+	</blockquote>
 
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/bootstrap.min.js"></script>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
 
+	<script type="text/javascript">
+	$(document).ready(function () {
 
+      // Aplica o efeito de "carousel" nas divs que possuirem a classe carousel.
+      $('.carousel').carousel({
+      	interval: 5000
+      });
+  });
+	</script>
 </body>
 </html>
