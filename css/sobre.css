@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+
+#fundo_paginas{	background:#FFF;}
+
+#geral_paginas { 
+	width:800px;
+	margin:0 auto;	
+	padding-bottom:10px;
+	padding-top:10px;
+	border:0px solid #F93;
+}
