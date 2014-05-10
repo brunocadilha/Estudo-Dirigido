@@ -146,15 +146,15 @@
       	interval: 5000
       });
 
-      // Aplica a transição quando houver click no link AVANÇAR.
+      // Aplica a transição quando houver click no link VOLTAR.
       $("#a-1").click(function () {
-      	$('#div-carousel').carousel(0);
+      	$('#div-carousel').carousel('prev');
       	return false;
       });
 
-      // Aplica a transição quando houver click no link VOLTAR.
+      // Aplica a transição quando houver click no link AVANÇAR.
       $("#a-2").click(function () {
-      	$('#div-carousel').carousel(1);
+      	$('#div-carousel').carousel('next');
       	return false;
       });
   });
