@@ -182,6 +182,12 @@
       $('.carousel').carousel({
       	interval: 5000
       });
+
+      // Aplica a transição quando houver click no link AVANÇAR.
+      $("#a-1").click(function () {
+       $('#div-carousel').carousel(0);
+       return false;
+     });
   });
 	</script>
 </body>
