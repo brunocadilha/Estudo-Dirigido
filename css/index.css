@@ -138,3 +138,83 @@ nav a:hover {
   padding: 35px;
   position: absolute;
   height: 225px;
+  line-height: 100px;
+  top: 50%;
+  margin-top: -180px;
+  left: 50%;
+  width: 600px;
+  text-align: center;
+  margin-left: -300px;
+  text-shadow: 1px 2px 1px #000;
+  box-shadow: 1px 2px 1px #000;
+}
+
+#mainsocial {
+  font-size: 35px;
+  line-height: 80px;
+}
+
+.right {
+  position: relative;
+  float: right;
+}
+
+img.right {
+  margin: 0 0 0 40px;
+  border-radius: 200px;
+}
+
+#copy {
+  padding: 20px 80px;
+  font-size: 24px;
+  text-align: justify;
+}
+
+#iconrow {
+  font-size: 130px;
+  text-align: justify;
+  margin-top: 50px;
+  color: #505050;
+}
+
+#iconrow::after {
+  content:'';
+  display: inline-block;
+  width: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+.large {
+  font-size: 45px;
+}
+
+hoverblk {
+  transition: .3;
+}
+
+.hoverblk:hover {
+  color: #5656B3;
+  transition: .3s;
+}
+
+
+
+
+
+
+
+
+body > div {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  figure {
+    margin: 0;
+  }
+
+  .container {
