@@ -185,9 +185,15 @@
 
       // Aplica a transição quando houver click no link AVANÇAR.
       $("#a-1").click(function () {
-       $('#div-carousel').carousel(0);
-       return false;
-     });
+      	$('#div-carousel').carousel(0);
+      	return false;
+      });
+
+      // Aplica a transição quando houver click no link VOLTAR.
+      $("#a-2").click(function () {
+      	$('#div-carousel').carousel(1);
+      	return false;
+      });
   });
 	</script>
 </body>
