@@ -118,3 +118,23 @@ nav a:hover {
   padding: 0 10px;
   margin: 0;
   color: #fff;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+#social {
+  top: -7px;
+  right: -150px;
+  font-size: 35px;
+  z-index: 100; 
+  color: #4a4a4a;
+}
+
+#mainlogo {
+  font-size: 150px;
+  color: white;
+  border: 10px solid white;
+  display: inline-block;
+  padding: 35px;
+  position: absolute;
+  height: 225px;
