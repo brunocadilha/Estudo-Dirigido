@@ -98,3 +98,104 @@ nav a:hover {
 
 .sticky {
   position: fixed !important;
+  top: 0;
+}
+
+#logo, #social {
+  position: absolute;
+  color: black;
+  z-index: 100;
+  transition: 1s;
+  line-height: 80px;
+}
+
+#logo {
+  left: -150px;
+  font-size: 25px;
+  background: #4a4a4a;
+  height: 65px;
+  line-height: 65px;
+  padding: 0 10px;
+  margin: 0;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+#social {
+  top: -7px;
+  right: -150px;
+  font-size: 35px;
+  z-index: 100; 
+  color: #4a4a4a;
+}
+
+#mainlogo {
+  font-size: 150px;
+  color: white;
+  border: 10px solid white;
+  display: inline-block;
+  padding: 35px;
+  position: absolute;
+  height: 225px;
+  line-height: 100px;
+  top: 50%;
+  margin-top: -180px;
+  left: 50%;
+  width: 600px;
+  text-align: center;
+  margin-left: -300px;
+  text-shadow: 1px 2px 1px #000;
+  box-shadow: 1px 2px 1px #000;
+}
+
+#mainsocial {
+  font-size: 35px;
+  line-height: 80px;
+}
+
+.right {
+  position: relative;
+  float: right;
+}
+
+img.right {
+  margin: 0 0 0 40px;
+  border-radius: 200px;
+}
+
+#copy {
+  padding: 20px 80px;
+  font-size: 24px;
+  text-align: justify;
+}
+
+#iconrow {
+  font-size: 130px;
+  text-align: justify;
+  margin-top: 50px;
+  color: #505050;
+}
+
+#iconrow::after {
+  content:'';
+  display: inline-block;
+  width: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+.large {
+  font-size: 45px;
+}
+
+hoverblk {
+  transition: .3;
+}
+
+.hoverblk:hover {
+  color: #5656B3;
+  transition: .3s;
+}
