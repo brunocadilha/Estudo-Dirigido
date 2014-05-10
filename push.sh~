@@ -1,0 +1,37 @@
+#!/bin/bash
+
+cd ./lib
+pwd
+git add .
+git commit -m "$1"
+#git pull
+git push
+
+cd ../src/mod
+pwd
+git add .
+git commit -m "$1"
+#git pull
+git push
+
+cd ../sql
+pwd
+git add .
+git commit -m "$1"
+#git pull
+git push
+
+cd ../ejb
+pwd
+git add .
+git commit -m "$1"
+#git pull
+git push
+
+cd ../web
+pwd
+git add .
+git commit -m "$1"
+#git pull
+git push
+
