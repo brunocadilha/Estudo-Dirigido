@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  -mox-box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1 {
+  font-size: 100px;  
+  margin: 20px 0;
+  color: #505050;
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+}
+
