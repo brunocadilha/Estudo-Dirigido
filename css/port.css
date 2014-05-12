@@ -32,7 +32,7 @@ div#columns figure {
 	-moz-column-break-inside: avoid;
 	column-break-inside: avoid;
 	padding: 15px;
-	padding-left: 40px;
+	padding-left: 20px;
 	padding-bottom: 5px;
 	background: -webkit-linear-gradient(45deg, #FFF, #F9F9F9);
 	opacity: 1;
