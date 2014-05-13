@@ -1,28 +1,62 @@
 @charset "utf-8";
 /* CSS Document */
 
-#fundo_paginas{	background:#FFF;}
-
-#geral_paginas { 
-	width:800px;
-	margin:0 auto;	
-	padding-bottom:10px;
-	padding-top:10px;
-	border:0px solid #F93;
+.wrapper {
+  margin:30px auto;
+  width:80%;
+  font-family:sans-serif;
+  color:#555;
+  font-size:14px;
+  line-height:24px;
+}
+h1 {
+  font-size:20px;
+  font-weight:bold;
+  text-align:center;
+  text-transform:uppercase;
+}
+h1 + p {
+  text-align:center;
+  margin:20px 0;
+  font-size:16px;
+}
+.tabs li {
+	list-style: none; 
+    float:left;
+    width:24%;
 }
 
-#conteudo {	
-color:#FFF;
-background:#333;
-
-float:left;
-padding-right:10px;
-padding-left:10px;
-padding-top:10px;
-padding-bottom:10px;
-overflow:auto;
+.tabs a {
+    display:block;
+    text-align:center;
+    text-decoration:none;
+    text-transform:uppercase;
+    color:#888;
+    padding:20px 0;
+    border-bottom:2px solid #888;
+    background:#f7f7f7;
 }
 
+.tabs a:hover {
+	background:#ddd;
+}
+      
+
+.tabs a:active {
+	background:#ddd;
+}
+
+.tabgroup  {
+  
+    padding:30px;
+    box-shadow:0 3px 10px rgba(0,0,0,.3);
+  
+}
+.clearfix:after {
+  content:"";
+  display:table;
+  clear:both;
+}
 
 
 
