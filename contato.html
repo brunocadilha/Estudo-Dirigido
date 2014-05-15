@@ -44,13 +44,13 @@
 
 
         <div class="panel-body">
-          <form name="form1" class="form-horizontal" role="form">
+          <form name="form1" class="form-horizontal" role="form" data-parsley-validate>
 
            <!-- Nome -->
            <div class="form-group">
             <label class="col-sm-4 control-label" for="nome">Nome</label>
             <div class="col-sm-5">
-              <input type="text" class="form-control input-md" id="nome" name="nome" placeholder="Nome Completo">
+              <input type="text" class="form-control input-md" id="nome" name="fullname" placeholder="Nome Completo" required/>
             </div>
           </div>
 
@@ -60,7 +60,7 @@
            <label class="col-sm-4 control-label" for="cpf">Cpf</label>
            <div class="col-sm-2">
             <input type="text" class="form-control input-medium" id="telefone" name="cpf"  onBlur="ValidarCPF(form1.cpf);" 
-            onKeyPress="MascaraCPF(form1.cpf);" maxlength="14" placeholder="###.###.###-##">
+            onKeyPress="MascaraCPF(form1.cpf);" maxlength="14" placeholder="###.###.###-##" required>
           </div>  
         </div>
 
@@ -70,17 +70,20 @@
          <label class="col-sm-4 control-label" for="telefone">Telefone</label>
          <div class="col-sm-2">
           <input type="text" class="form-control input-medium" id="telefone" name="tel" onKeyPress="MascaraTelefone(form1.tel);" 
-          maxlength="14"  onBlur="ValidaTelefone(form1.tel);" placeholder="(##) ####-####">
+          maxlength="14"  onBlur="ValidaTelefone(form1.tel);" placeholder="(##) ####-####" required>
         </div>  
       </div>
 
       <!-- Radios Sexo -->
+
+
+
       <div class="form-group">
         <label class="col-md-4 control-label" for="radios">Sexo</label>
         <div class="col-md-4">
          <div class="radio">
           <label for="radios-0">
-            <input type="radio" name="sexo" id="radios-0" value="1" checked>
+            <input type="radio" name="sexo" id="radios-0" value="1" required>
             Masculino
           </label>
         </div>
@@ -96,7 +99,7 @@
     <div class="form-group">
       <label class="col-sm-4 control-label" for="email">Email</label>
       <div class="col-sm-5">
-        <input type="email" class="form-control input-md" id="email" name="email" placeholder="Email">
+        <input data-parsley-trigger="change" type="email" class="form-control input-md" id="email" name="email" placeholder="Email" required >
       </div>
     </div>
 
@@ -104,7 +107,7 @@
     <div class="form-group">
       <label class="col-sm-4 control-label" for="textarea">Mensagem</label>
       <div class="col-sm-5">
-        <textarea class="form-control" rows="5" id="textarea" name="textarea" placeholder="Deixe aqui sua mensagem!"></textarea>
+        <textarea class="form-control" rows="5" id="textarea" name="textarea" placeholder="Deixe aqui sua mensagem!" required></textarea>
       </div>
     </div>
 
@@ -116,6 +119,7 @@
       </div>
     </div>
   </form>
+
 </div>
 </div>
 </div>
@@ -131,7 +135,7 @@
 <script src="js/bootstrap.min.js"></script>
 
 <!--Verificação de campo em branco -->
-<script language="javascript">
+<!--<script language="javascript">
 function verifica()
 {
   if (form1.nome.value=="") {
@@ -157,7 +161,7 @@ function verifica()
  return true;  
 
 }
-</script>
+</script>-->
 <script language="JavaScript" type="text/javascript" src="js/index.js"></script> 
 </body>
 </html>
