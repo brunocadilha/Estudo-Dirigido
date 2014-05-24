@@ -111,6 +111,28 @@
       </div>
     </div>
 
+    <div class="form-group">
+      <label class="col-sm-4 control-label" for="text">CEP</label>
+      <div class="col-sm-5">
+        <input data-parsley-trigger="change" type="text" class="form-control input-md" id="zipCode" name="zipCode" placeholder="Cep" value="" required >
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-sm-4 control-label" for="text">Rua</label>
+      <div class="col-sm-5">
+        <input data-parsley-trigger="change" type="text" class="form-control input-md" id="street" name="street" placeholder="Rua" required >
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-sm-4 control-label" for="text">Distrito</label>
+      <div class="col-sm-5">
+        <input data-parsley-trigger="change" type="text" class="form-control input-md" id="district" name="district" placeholder="Distrito" required >
+      </div>
+    </div>
+
+
 
     <div class="form-group">
       <label class="col-md-4 control-label" for="enviar"></label>
@@ -133,6 +155,32 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="js/jquery-2.0.2.js"></script>
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  <script type="text/javascript" src="js/pluggins/jZipCode_1.1.js"></script>
+  <script type="text/javascript">
+  
+    $(function(){
+    
+      
+      $("#zipCode").jZipCode({
+        
+        streetTarget:"#street",
+        districtTarget:"#district",
+        cityTarget:"#city",
+        stateTarget:"#state",
+        multipleReturns:"#returns", 
+        keyUpDelay:1000,
+        showMap: "map"
+        
+        
+      });
+    
+    });
+    
+  </script>
+
 
 <!--Verificação de campo em branco -->
 <!--<script language="javascript">
